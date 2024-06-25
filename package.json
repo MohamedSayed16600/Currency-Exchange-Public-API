@@ -1,0 +1,11 @@
+{
+  "name": "currency-exchange-api",
+  "version": "1.0.0",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "node-cache": "^5.1.2",
+    "redis": "^4.6.14"
+  }
+}

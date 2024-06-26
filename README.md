@@ -37,7 +37,29 @@ How to Run the Project:
 4) open web browser and enter the following url: "http://localhost:3001/api-docs"
 
 API end points using swagger:
- 
+ case 1:
+The inputs:
+	from: USD
+	To: EUR
+The output:
+0.93326968
+	 
+
+
+Case 2:
+The inputs:
+	From: USD
+	To: EGP
+The output:
+48.37898808
+ 	
+
+Case 3:The inputs:
+	From: EUR
+	To: AUD
+The output:
+1.61218082
+
 
 
 

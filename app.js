@@ -89,12 +89,15 @@ app.get('/exchange-rates', async (req, res) => {
   if (!from ||!to) {
     return res.status(400).json({ error: 'Invalid request' });
   }
-  // Try to get the exchange rates from the ExchangeRates instance
   try {
-    const exchangeRates = await exchangeRates.getExchangeRates(from, to);
-    return res.json(exchangeRates);
+    // Try to get the exchange rates from the ExchangeRates instance
+    const exchangeRate = await exchangeRates.getExchangeRates(from, to); 
+    // If successful, return the exchange rate data
+    return res.json(exchangeRate); 
   } catch (error) {
-    return res.status(500).json({ error: 'Internal Server Error' });
+    // If an error occurs, handle it appropriately
+    console.error('Error fetching exchange rates:', error); // Log the error for debugging
+    return res.status(500).json({ error: 'Internal Server Error' }); // Send a 500 error response
   }
 });
 

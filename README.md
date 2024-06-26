@@ -32,7 +32,7 @@ Code Structure:
 
 How to Run the Project:
 1) install/clone this repo to your local machine
-2) install required dependencies using "npm install axios, express,node-cache,express-rate-limit" in the project directory
+2) install required dependencies using "npm install axios, express,node-cache,express-rate-limit, swagger-jsdoc swagger-ui-express" in the project directory
 3) run command "node app.js" in the project directory to run the application
 4) open web browser and enter the following url: "http://localhost:3001/api-docs"
 
